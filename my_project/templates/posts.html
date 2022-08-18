@@ -1,0 +1,7 @@
+@for post in posts
+    {{ post.title }}
+    <a href="{{ route('detail_post', {'id' : post.id}) }}">Detail</a>
+    || <a href="{{ route('edit_post', {'id' : post.id}) }}">Update</a>
+    || <a href="{{ route('delete_post', {'id' : post.id}) }}">Delete</a>
+    <br/>
+@endfor
